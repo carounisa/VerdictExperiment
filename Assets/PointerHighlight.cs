@@ -211,7 +211,7 @@ namespace Valve.VR.Extras
         }
 
         /// <summary>
-        /// Called when a Hand starts hovering over this object
+        /// Called when the laser pointer points at this object
         /// </summary>
         protected void OnPoint(object sender, PointerEventArgs e)
         {
@@ -229,7 +229,7 @@ namespace Valve.VR.Extras
         }
 
         /// <summary>
-        /// Called when a Hand starts hovering over this object
+        /// Called when the laser pointer pulls the trigger on this object
         /// </summary>
         protected void OnPointClick(object sender, PointerEventArgs e)
         {
@@ -262,7 +262,7 @@ namespace Valve.VR.Extras
 
 
         /// <summary>
-        /// Called when a Hand stops hovering over this object
+        /// Called when a the laser pointer stops pointing at this object
         /// </summary>
         private void OnPointOut(object sender, PointerEventArgs e)
         {
