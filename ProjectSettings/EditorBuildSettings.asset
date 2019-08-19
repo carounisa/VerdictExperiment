@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HitAndRun.unity
     guid: d21af4eb255507747bb87501eaa03f7d
+  - enabled: 1
+    path: Assets/Scenes/HitAndRunPhoto.unity
+    guid: 11f016495ee4aa74caa2588b55c6f8dc
   m_configObjects: {}

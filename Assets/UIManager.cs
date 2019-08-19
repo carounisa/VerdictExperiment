@@ -49,11 +49,19 @@ public class UIManager : MonoBehaviour
         _mainText.text = _uiArray[_currPanel].header;
 
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && (_currPanel < _uiArray.Length-1))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-           // _backSprite.sprite = _uiArray[_currPanel].image;
-          //  _backText.text = _uiArray[_currPanel].header;
-            _currPanel++;
+
+            if (_mainText.text.Equals("Eye Witness Statement"))
+            {
+                GetComponent<AudioSource>().Play();
+            }
+            // _backSprite.sprite = _uiArray[_currPanel].image;
+            //  _backText.text = _uiArray[_currPanel].header;
+            if (_currPanel < _uiArray.Length - 1)
+                _currPanel++;
+
+
 
 
         }
