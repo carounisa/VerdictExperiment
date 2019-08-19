@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class SetPlayerPrefs : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class SetPlayerPrefs : MonoBehaviour
 
     private void Start()
     {
+        XRSettings.enabled = false;
+
         PlayerPrefs.SetInt("Recording", 0);
         _dropdownSelection = dropDown.options[dropDown.value].text;
         _pNumber = 0;
@@ -49,6 +52,8 @@ public class SetPlayerPrefs : MonoBehaviour
             PlayerPrefs.SetString("Condition", _dropdownSelection);
             PlayerPrefs.SetInt("Recording", 1);
         }
+        if (!PlayerPrefs.GetString("Condition").Equals("HitAndRunPhoto"))
+            XRSettings.enabled = true;
         SceneManager.LoadScene(_dropdownSelection);
     }
 }

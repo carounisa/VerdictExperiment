@@ -17,8 +17,9 @@ public class DataHandler : MonoBehaviour
     private string _logFilePath;
     private string _logDir;
 
-    private float _interval = 5f;
+    private float _interval = 1f;
     private float _currentTime = 0f;
+    private bool _isRecording;
 
 
     private static DataHandler _instance;
@@ -36,6 +37,11 @@ public class DataHandler : MonoBehaviour
 
     private void Awake()
     {
+        if (PlayerPrefs.GetInt("Recording") == 1)
+            _isRecording = true;
+
+        UnityEngine.Debug.Log(_isRecording);
+
         _logDir = Path.Combine(Application.dataPath, "PlayerRecordings");
 
         if (!Directory.Exists(_logDir))
@@ -62,17 +68,18 @@ public class DataHandler : MonoBehaviour
 
     private void Update()
     {
+        if(_isRecording) {
+            _currentTime += Time.deltaTime;
+            // record every second
+            if (_currentTime >= _interval)
+            {
+                _head.headPosition = Camera.main.transform.position;
+                _head.direction = Camera.main.transform.forward;
+                playerData.headDataList.Add(_head);
+                _currentTime = _currentTime % _interval;
 
-        if(_currentTime >= _interval)
-        {
-            _head.headPosition = Camera.main.transform.position;
-            _head.direction = Camera.main.transform.forward;
-            playerData.headDataList.Add(_head);
-         //   WriteToFile();
+            }
         }
-
-        _currentTime += Time.deltaTime;
-
     }
 
     public void startTimer()
@@ -89,14 +96,17 @@ public class DataHandler : MonoBehaviour
 
     private void WriteToFile()
     {
-        string json = JsonUtility.ToJson(playerData, true);
-        File.WriteAllText(_logFilePath, json);
-
+            string json = JsonUtility.ToJson(playerData, true);
+            File.WriteAllText(_logFilePath, json);
     }
 
     private void OnApplicationQuit()
     {
-        UnityEngine.Debug.Log("Exiting application and writing to file.");
-        WriteToFile();
+        if (_isRecording)
+        {
+            UnityEngine.Debug.Log("Exiting application and writing to file.");
+            WriteToFile();
+        }
+
     }
 }
