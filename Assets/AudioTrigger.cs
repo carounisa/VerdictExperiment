@@ -7,9 +7,9 @@ public class AudioTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         bool hasPlayed = false;
-        Debug.Log(other.tag);
         if(other.tag == "Player" && !hasPlayed)
         {
+            Debug.Log("is playing");
             GetComponent<AudioSource>().Play();
             hasPlayed = true;
         }

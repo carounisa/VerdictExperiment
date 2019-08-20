@@ -36,6 +36,9 @@ public class UIManager : MonoBehaviour
         _mainPanel = Instantiate(_panel, transform);
         _mainSprite = _mainPanel.GetComponentInChildren<Image>();
         _mainText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
+        _backSprite = _mainPanel.GetComponentInChildren<Image>();
+        _backText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
+
 
         _mainSprite.sprite = _uiArray[_currPanel].image;
         _mainText.text = _uiArray[_currPanel].header;
@@ -52,12 +55,13 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
-            if (_mainText.text.Equals("Eye Witness Statement"))
+            if (_mainText.text.Equals("Eye Witness View"))
             {
                 GetComponent<AudioSource>().Play();
             }
-            // _backSprite.sprite = _uiArray[_currPanel].image;
-            //  _backText.text = _uiArray[_currPanel].header;
+             _backSprite.sprite = _uiArray[_currPanel].image;
+             _backText.text = _uiArray[_currPanel].header;
+
             if (_currPanel < _uiArray.Length - 1)
                 _currPanel++;
 
@@ -67,9 +71,10 @@ public class UIManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && _currPanel != 0)
         {
+            _backSprite.sprite = _uiArray[_currPanel].image;
+            _backText.text = _uiArray[_currPanel].header;
             _currPanel--;
-            //_backSprite.sprite = _uiArray[_currPanel].image;
-            //_backText.text = _uiArray[_currPanel].header;
+
         }
     }
 }

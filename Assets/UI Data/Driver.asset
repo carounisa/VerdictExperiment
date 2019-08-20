@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: Driver
   m_EditorClassIdentifier: 
-  header: 
-  image: {fileID: 0}
+  header: Driver's View
+  image: {fileID: 21300000, guid: c37f31d1d8d1efe4fbd3c41e13d28757, type: 3}
