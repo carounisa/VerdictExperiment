@@ -243,7 +243,6 @@ namespace Valve.VR.Extras
                 MarkUI.ShowUI(true);
 
                 DataHandler.instance.startTimer();
-                Debug.Log(DateTime.Now.ToLongTimeString());
                 
             }
             else if(e.target == transform && MarkUI.IsEnabled())
@@ -253,7 +252,6 @@ namespace Valve.VR.Extras
                 DataHandler.instance.playerData.evidenceList.Add(DataHandler.instance.evidenceData);
 
                 MarkUI.ShowUI(false);
-                Debug.Log(DateTime.Now.ToLongTimeString());
                 DataHandler.instance.stopTimer();
             }
 
