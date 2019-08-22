@@ -13,6 +13,9 @@ TagManager:
   - Paint
   - RippedShirt
   - EyeWitness
+  - Click
+  - Hover
+  - TeleportPoint
   layers:
   - Default
   - TransparentFX

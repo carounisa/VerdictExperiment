@@ -13,7 +13,7 @@ public class ShowTooltip : MonoBehaviour
     private void Start()
     {
         Valve.VR.Extras.SteamVR_LaserPointer.PointerIn += OnPoint;
-        Valve.VR.Extras.SteamVR_LaserPointer.PointerOut += OnPointOut;
+        Valve.VR.Extras.SteamVR_LaserPointer.PointerClick += OnClick;
     }
 
     private void Awake()
@@ -30,19 +30,19 @@ public class ShowTooltip : MonoBehaviour
 
     protected void OnPoint(object sender, Valve.VR.Extras.PointerEventArgs e)
     {
-        Debug.Log("in");
-        if(e.target == transform)
+        if(e.target == transform && transform.tag == "Hover")
             clone.SetActive(false);
-
-
     }
 
-    private void OnPointOut(object sender, Valve.VR.Extras.PointerEventArgs e)
+    private void OnClick(object sender, Valve.VR.Extras.PointerEventArgs e)
     {
-        Debug.Log("out");
-        clone.SetActive(true);
+        if(e.target == transform && transform.tag == "Click")
+            clone.SetActive(false);
     }
-        
+
+
+
+
 
 
 
