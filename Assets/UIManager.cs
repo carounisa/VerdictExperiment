@@ -38,6 +38,8 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(UnityEngine.XR.XRSettings.enabled)
+            UnityEngine.XR.XRSettings.enabled = false;
 
         _bread = new ArrayList();
 
@@ -61,8 +63,8 @@ public class UIManager : MonoBehaviour
         _mainPanel = Instantiate(_panel, transform);
         _mainSprite = _mainPanel.GetComponentInChildren<Image>();
         _mainText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
-        _backSprite = _mainPanel.GetComponentInChildren<Image>();
-        _backText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
+        //backSprite = _mainPanel.GetComponentInChildren<Image>();
+        //_backText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
 
 
         _mainSprite.sprite = _uiArray[_currPanel].image;
@@ -83,8 +85,8 @@ public class UIManager : MonoBehaviour
             {
                 GetComponent<AudioSource>().Play();
             }
-             _backSprite.sprite = _uiArray[_currPanel].image;
-             _backText.text = _uiArray[_currPanel].header;
+            // _backSprite.sprite = _uiArray[_currPanel].image;
+            // _backText.text = _uiArray[_currPanel].header;
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = emptyBreadcrumb;
@@ -98,8 +100,8 @@ public class UIManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && _currPanel != 0)
         {
-            _backSprite.sprite = _uiArray[_currPanel].image;
-            _backText.text = _uiArray[_currPanel].header;
+           // _backSprite.sprite = _uiArray[_currPanel].image;
+           // _backText.text = _uiArray[_currPanel].header;
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = emptyBreadcrumb;
