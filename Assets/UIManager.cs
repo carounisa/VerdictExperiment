@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.XR;
+using System;
+using System.Diagnostics;
 
 public class UIManager : MonoBehaviour
 {
@@ -20,6 +22,8 @@ public class UIManager : MonoBehaviour
     public Sprite filledBreadcrumb;
     public GameObject dotHolder;
     Image currImg;
+    bool _hasPlayed = false;
+    Stopwatch stopWatch;
 
 
     //Panel tracking
@@ -38,6 +42,8 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stopWatch = new Stopwatch();
+
         if(UnityEngine.XR.XRSettings.enabled)
             UnityEngine.XR.XRSettings.enabled = false;
 
@@ -73,20 +79,33 @@ public class UIManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         _mainSprite.sprite = _uiArray[_currPanel].image;
         _mainText.text = _uiArray[_currPanel].header;
+        
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            
-            if (_mainText.text.Equals("Eye Witness View"))
+            if (DataHandler.instance.isWatchRunning())
             {
+                DataHandler.instance.endRecordingEvidence();
+            }
+
+            DataHandler.instance.startRecordingEvidence(_mainText.text);
+
+
+
+            if (_mainText.text.Equals("Eye Witness View") && !(_hasPlayed))
+            {
+                _hasPlayed = true;
                 GetComponent<AudioSource>().Play();
             }
+
             // _backSprite.sprite = _uiArray[_currPanel].image;
             // _backText.text = _uiArray[_currPanel].header;
+
+            //stopWatch.Stop();
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = emptyBreadcrumb;
@@ -96,7 +115,6 @@ public class UIManager : MonoBehaviour
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = filledBreadcrumb;
-
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && _currPanel != 0)
         {
@@ -110,6 +128,9 @@ public class UIManager : MonoBehaviour
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = filledBreadcrumb;
+
+
+            // DataHandler.instance.endRecordingEvidence()
 
         }
     }

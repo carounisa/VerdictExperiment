@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class DataHandler : MonoBehaviour
 {
@@ -20,6 +22,8 @@ public class DataHandler : MonoBehaviour
     private float _interval = 1f;
     private float _currentTime = 0f;
     private bool _isRecording;
+
+    private GameObject _target;
 
 
     private static DataHandler _instance;
@@ -50,6 +54,7 @@ public class DataHandler : MonoBehaviour
         playerData = new PlayerData();
         playerData.headDataList = new List<PlayerData.HeadData>();
         playerData.evidenceList = new List<PlayerData.Evidence>();
+        playerData.timeStampList = new List<string>();
         playerData.pNumber = PlayerPrefs.GetInt("Participant Number");
         playerData.condition = PlayerPrefs.GetString("Condition");
 
@@ -68,14 +73,19 @@ public class DataHandler : MonoBehaviour
 
     private void Update()
     {
-        if(_isRecording) {
+        if (_isRecording) {
             _currentTime += Time.deltaTime;
             // record every second
             if (_currentTime >= _interval)
             {
-                _head.headPosition = Camera.main.transform.position;
-                _head.direction = Camera.main.transform.forward;
-                playerData.headDataList.Add(_head);
+                if (playerData.condition.Equals("HitAndRun"))
+                {
+                    _head.headPosition = Player.instance.hmdTransform.position;
+                    _head.direction = Player.instance.hmdTransform.forward;
+                    playerData.headDataList.Add(_head);
+                }
+
+                playerData.timeStampList.Add(string.Format("{0}:{1}:{2}:{3}", DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond));
                 _currentTime = _currentTime % _interval;
 
             }
@@ -84,6 +94,7 @@ public class DataHandler : MonoBehaviour
 
     public void startTimer()
     {
+        _stopwatch.Reset();
         _stopwatch.Start();
     }
 
@@ -92,6 +103,26 @@ public class DataHandler : MonoBehaviour
         _stopwatch.Stop();
         System.TimeSpan elapsed = _stopwatch.Elapsed;
         evidenceData.elapsedTime = string.Format("{0:00}:{1:00}:{2:00}", elapsed.Minutes, elapsed.Seconds, elapsed.Milliseconds);
+    }
+
+    public bool isWatchRunning()
+    {
+        return _stopwatch.IsRunning;
+    }
+
+    public void startRecordingEvidence(string name)
+    {
+        evidenceData = new PlayerData.Evidence();
+        evidenceData.name = name;
+        evidenceData.startTime = DateTime.Now.ToLongTimeString();
+        startTimer();
+    }
+
+    public void endRecordingEvidence()
+    {
+        evidenceData.endTime = System.DateTime.Now.ToLongTimeString();
+        playerData.evidenceList.Add(DataHandler.instance.evidenceData);
+        stopTimer();
     }
 
     private void WriteToFile()

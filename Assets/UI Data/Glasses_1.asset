@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: Glasses_1
   m_EditorClassIdentifier: 
-  header: Sunglasses
+  header: 'Prosecution Exibhit 3: Sunglasses'
   image: {fileID: 21300000, guid: 0fd8ef7bf9540b54ba13282430974839, type: 3}

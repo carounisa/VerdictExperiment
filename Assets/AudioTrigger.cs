@@ -10,8 +10,8 @@ public class AudioTrigger : MonoBehaviour
         if(other.tag == "Player" && !hasPlayed)
         {
             Debug.Log("is playing");
-            GetComponent<AudioSource>().Play();
             hasPlayed = true;
+            GetComponent<AudioSource>().Play();
         }
     }
 }

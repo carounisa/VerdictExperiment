@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: Paint_2
   m_EditorClassIdentifier: 
-  header: Flakes of Paint
+  header: 'Prosecution Exibhit 6: Paint'
   image: {fileID: 21300000, guid: 5cb83101f409fb748a9afd1d4de6f563, type: 3}

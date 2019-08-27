@@ -7,6 +7,7 @@ public class PlayerData
 {
     public int pNumber;
     public string condition;
+    public List<string> timeStampList;
     public List<HeadData> headDataList;
     public List<Evidence> evidenceList;
 
@@ -25,4 +26,7 @@ public class PlayerData
         public string endTime;
         public string elapsedTime;
     }
+
+
+
 }

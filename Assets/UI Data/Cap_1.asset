@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: Cap_1
   m_EditorClassIdentifier: 
-  header: Cap
+  header: 'Prosecution Exhibit 2: Baseball cap'
   image: {fileID: 21300000, guid: 7524832567ec9ad46bd0caea932f3f74, type: 3}

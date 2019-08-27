@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: Shoe_1
   m_EditorClassIdentifier: 
-  header: Shoe
+  header: 'Prosecution Exhibit 1: Shoe'
   image: {fileID: 21300000, guid: d64e5b52dc54d3e4eaa8f73ea6aca416, type: 3}

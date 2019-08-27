@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: EyeWitness
   m_EditorClassIdentifier: 
-  header: Eye Witness View
+  header: Eye Witness
   image: {fileID: 21300000, guid: 19bc4b6deec4c9844b1ebd25fd087a55, type: 3}
