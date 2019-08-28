@@ -83,7 +83,7 @@ public class UIManager : MonoBehaviour
     {
         _mainSprite.sprite = _uiArray[_currPanel].image;
         _mainText.text = _uiArray[_currPanel].header;
-        
+        UnityEngine.Debug.Log("this should show up");
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -96,9 +96,10 @@ public class UIManager : MonoBehaviour
 
 
 
-            if (_mainText.text.Equals("Eye Witness View") && !(_hasPlayed))
+            if (_mainText.text.Equals("Eye Witness") && !(_hasPlayed))
             {
                 _hasPlayed = true;
+                UnityEngine.Debug.Log("is playing");
                 GetComponent<AudioSource>().Play();
             }
 

@@ -1,0 +1,140 @@
+{
+    "pNumber": 234,
+    "condition": "HitAndRun",
+    "timeStampList": [],
+    "headDataList": [],
+    "evidenceList": [
+        {
+            "name": "Please use the key arrows to navigate.",
+            "startTime": "2:52:38 PM",
+            "endTime": "2:52:38 PM",
+            "elapsedTime": "00:00:292"
+        },
+        {
+            "name": "Scene",
+            "startTime": "2:52:38 PM",
+            "endTime": "2:52:38 PM",
+            "elapsedTime": "00:00:240"
+        },
+        {
+            "name": "Scene",
+            "startTime": "2:52:38 PM",
+            "endTime": "2:52:39 PM",
+            "elapsedTime": "00:00:173"
+        },
+        {
+            "name": "Scene",
+            "startTime": "2:52:39 PM",
+            "endTime": "2:52:39 PM",
+            "elapsedTime": "00:00:160"
+        },
+        {
+            "name": "Scene",
+            "startTime": "2:52:39 PM",
+            "endTime": "2:52:39 PM",
+            "elapsedTime": "00:00:144"
+        },
+        {
+            "name": "Scene",
+            "startTime": "2:52:39 PM",
+            "endTime": "2:52:39 PM",
+            "elapsedTime": "00:00:128"
+        },
+        {
+            "name": "Prosecution Exhibit 1: Shoe",
+            "startTime": "2:52:39 PM",
+            "endTime": "2:52:39 PM",
+            "elapsedTime": "00:00:128"
+        },
+        {
+            "name": "Prosecution Exhibit 1: Shoe",
+            "startTime": "2:52:39 PM",
+            "endTime": "2:52:39 PM",
+            "elapsedTime": "00:00:128"
+        },
+        {
+            "name": "Prosecution Exhibit 2: Baseball cap",
+            "startTime": "2:52:39 PM",
+            "endTime": "2:52:39 PM",
+            "elapsedTime": "00:00:119"
+        },
+        {
+            "name": "Prosecution Exhibit 2: Baseball cap",
+            "startTime": "2:52:39 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:128"
+        },
+        {
+            "name": "Prosecution Exibhit 3: Sunglasses",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:126"
+        },
+        {
+            "name": "Prosecution Exibhit 3: Sunglasses",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:136"
+        },
+        {
+            "name": "Prosecution Exibhit 4: Smartphone",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:128"
+        },
+        {
+            "name": "Prosecution Exibhit 4: Smartphone",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:129"
+        },
+        {
+            "name": "Prosecution Exibhit 5: Bottles",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:133"
+        },
+        {
+            "name": "Prosecution Exibhit 5: Bottles",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:136"
+        },
+        {
+            "name": "Prosecution Exibhit 6: Paint",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:40 PM",
+            "elapsedTime": "00:00:134"
+        },
+        {
+            "name": "Prosecution Exibhit 6: Paint",
+            "startTime": "2:52:40 PM",
+            "endTime": "2:52:41 PM",
+            "elapsedTime": "00:00:136"
+        },
+        {
+            "name": "Prosecution Exibhit 7: Damaged headlight",
+            "startTime": "2:52:41 PM",
+            "endTime": "2:52:41 PM",
+            "elapsedTime": "00:00:112"
+        },
+        {
+            "name": "Prosecution Exibhit 7: Damaged headlight",
+            "startTime": "2:52:41 PM",
+            "endTime": "2:52:41 PM",
+            "elapsedTime": "00:00:167"
+        },
+        {
+            "name": "Prosecution Exibhit 8: Ripped shirt",
+            "startTime": "2:52:41 PM",
+            "endTime": "2:52:41 PM",
+            "elapsedTime": "00:00:129"
+        },
+        {
+            "name": "Prosecution Exibhit 8: Ripped shirt",
+            "startTime": "2:52:41 PM",
+            "endTime": "2:52:42 PM",
+            "elapsedTime": "00:00:566"
+        }
+    ]
+}
