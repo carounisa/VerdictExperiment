@@ -237,7 +237,7 @@ namespace Valve.VR.Extras
             {
                 DataHandler.instance.evidenceData = new PlayerData.Evidence();
                 DataHandler.instance.evidenceData.name = transform.tag;
-                DataHandler.instance.evidenceData.startTime = DateTime.Now.ToLongTimeString();
+                DataHandler.instance.evidenceData.startTime = string.Format("{0}:{1}:{2}:{3}", DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond);
 
                 MarkUI.UpdateUI(heading, image1, image2, transform);
                 MarkUI.ShowUI(true);
@@ -248,7 +248,7 @@ namespace Valve.VR.Extras
             else if(e.target == transform && MarkUI.IsEnabled())
             {
 
-                DataHandler.instance.evidenceData.endTime = System.DateTime.Now.ToLongTimeString();
+                DataHandler.instance.evidenceData.endTime = string.Format("{0}:{1}:{2}:{3}", DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond);
                 DataHandler.instance.playerData.evidenceList.Add(DataHandler.instance.evidenceData);
 
                 MarkUI.ShowUI(false);

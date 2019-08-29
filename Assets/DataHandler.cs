@@ -83,9 +83,8 @@ public class DataHandler : MonoBehaviour
                     _head.headPosition = Player.instance.hmdTransform.position;
                     _head.direction = Player.instance.hmdTransform.forward;
                     playerData.headDataList.Add(_head);
+                    playerData.timeStampList.Add(string.Format("{0}:{1}:{2}:{3}", DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond));
                 }
-
-                playerData.timeStampList.Add(string.Format("{0}:{1}:{2}:{3}", DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond));
                 _currentTime = _currentTime % _interval;
 
             }
@@ -114,13 +113,13 @@ public class DataHandler : MonoBehaviour
     {
         evidenceData = new PlayerData.Evidence();
         evidenceData.name = name;
-        evidenceData.startTime = DateTime.Now.ToLongTimeString();
+        evidenceData.startTime = string.Format("{0}:{1}:{2}:{3}", DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond);
         startTimer();
     }
 
     public void endRecordingEvidence()
     {
-        evidenceData.endTime = System.DateTime.Now.ToLongTimeString();
+        evidenceData.endTime = string.Format("{0}:{1}:{2}:{3}", DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond);
         playerData.evidenceList.Add(DataHandler.instance.evidenceData);
         stopTimer();
     }

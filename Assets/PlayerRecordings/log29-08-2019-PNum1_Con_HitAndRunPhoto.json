@@ -1,0 +1,106 @@
+{
+    "pNumber": 1,
+    "condition": "HitAndRunPhoto",
+    "timeStampList": [
+        "13:20:7:746",
+        "13:20:8:745",
+        "13:20:9:744",
+        "13:20:10:745",
+        "13:20:11:743",
+        "13:20:12:742",
+        "13:20:13:745",
+        "13:20:14:745",
+        "13:20:15:743",
+        "13:20:16:745",
+        "13:20:17:742",
+        "13:20:18:743",
+        "13:20:19:745",
+        "13:20:20:745",
+        "13:20:21:745",
+        "13:20:22:744",
+        "13:20:23:745",
+        "13:20:24:745",
+        "13:20:25:745",
+        "13:20:26:745",
+        "13:20:27:742",
+        "13:20:28:745",
+        "13:20:29:742",
+        "13:20:30:744",
+        "13:20:31:746"
+    ],
+    "headDataList": [],
+    "evidenceList": [
+        {
+            "name": "Please use the key arrows to navigate.",
+            "startTime": "1:20:09 PM",
+            "endTime": "1:20:10 PM",
+            "elapsedTime": "00:01:133"
+        },
+        {
+            "name": "Scene 1",
+            "startTime": "1:20:10 PM",
+            "endTime": "1:20:10 PM",
+            "elapsedTime": "00:00:744"
+        },
+        {
+            "name": "Scene 2",
+            "startTime": "1:20:10 PM",
+            "endTime": "1:20:11 PM",
+            "elapsedTime": "00:00:569"
+        },
+        {
+            "name": "Scene 3",
+            "startTime": "1:20:11 PM",
+            "endTime": "1:20:12 PM",
+            "elapsedTime": "00:01:231"
+        },
+        {
+            "name": "Scene 4",
+            "startTime": "1:20:12 PM",
+            "endTime": "1:20:14 PM",
+            "elapsedTime": "00:01:679"
+        },
+        {
+            "name": "Scene 5",
+            "startTime": "1:20:14 PM",
+            "endTime": "1:20:20 PM",
+            "elapsedTime": "00:05:855"
+        },
+        {
+            "name": "Prosecution Exhibit 1: Shoe",
+            "startTime": "1:20:20 PM",
+            "endTime": "1:20:23 PM",
+            "elapsedTime": "00:03:135"
+        },
+        {
+            "name": "Scene 5",
+            "startTime": "1:20:23 PM",
+            "endTime": "1:20:24 PM",
+            "elapsedTime": "00:00:808"
+        },
+        {
+            "name": "Prosecution Exhibit 1: Shoe",
+            "startTime": "1:20:24 PM",
+            "endTime": "1:20:25 PM",
+            "elapsedTime": "00:01:367"
+        },
+        {
+            "name": "Prosecution Exhibit 1: Shoe",
+            "startTime": "1:20:25 PM",
+            "endTime": "1:20:26 PM",
+            "elapsedTime": "00:00:831"
+        },
+        {
+            "name": "Prosecution Exhibit 2: Baseball cap",
+            "startTime": "1:20:26 PM",
+            "endTime": "1:20:27 PM",
+            "elapsedTime": "00:00:721"
+        },
+        {
+            "name": "Prosecution Exhibit 2: Baseball cap",
+            "startTime": "1:20:27 PM",
+            "endTime": "1:20:28 PM",
+            "elapsedTime": "00:01:430"
+        }
+    ]
+}

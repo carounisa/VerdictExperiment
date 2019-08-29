@@ -83,7 +83,6 @@ public class UIManager : MonoBehaviour
     {
         _mainSprite.sprite = _uiArray[_currPanel].image;
         _mainText.text = _uiArray[_currPanel].header;
-        UnityEngine.Debug.Log("this should show up");
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -94,8 +93,6 @@ public class UIManager : MonoBehaviour
 
             DataHandler.instance.startRecordingEvidence(_mainText.text);
 
-
-
             if (_mainText.text.Equals("Eye Witness") && !(_hasPlayed))
             {
                 _hasPlayed = true;
@@ -105,8 +102,6 @@ public class UIManager : MonoBehaviour
 
             // _backSprite.sprite = _uiArray[_currPanel].image;
             // _backText.text = _uiArray[_currPanel].header;
-
-            //stopWatch.Stop();
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = emptyBreadcrumb;
@@ -119,8 +114,16 @@ public class UIManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && _currPanel != 0)
         {
-           // _backSprite.sprite = _uiArray[_currPanel].image;
-           // _backText.text = _uiArray[_currPanel].header;
+
+            if (DataHandler.instance.isWatchRunning())
+            {
+                DataHandler.instance.endRecordingEvidence();
+            }
+
+            DataHandler.instance.startRecordingEvidence(_mainText.text);
+
+            // _backSprite.sprite = _uiArray[_currPanel].image;
+            // _backText.text = _uiArray[_currPanel].header;
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = emptyBreadcrumb;
@@ -129,9 +132,6 @@ public class UIManager : MonoBehaviour
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = filledBreadcrumb;
-
-
-            // DataHandler.instance.endRecordingEvidence()
 
         }
     }
