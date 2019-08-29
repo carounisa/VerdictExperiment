@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: Phone_1
   m_EditorClassIdentifier: 
-  header: 'Prosecution Exibhit 4: Smartphone'
+  header: 'Prosecution Exhibit 4: Smartphone'
   image: {fileID: 21300000, guid: 16581f62ad667dd40b7ee9cbcdb94a48, type: 3}

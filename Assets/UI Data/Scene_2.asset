@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: Scene_2
   m_EditorClassIdentifier: 
-  header: Scene
+  header: Scene 2
   image: {fileID: 21300000, guid: 86cf1377372fa1548ae119f8c4de3fec, type: 3}

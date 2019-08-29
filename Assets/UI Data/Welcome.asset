@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Welcome
   m_EditorClassIdentifier: 
   header: Please use the key arrows to navigate.
-  image: {fileID: 21300000, guid: ceb42c6dec0456d4397876e7c421bddd, type: 3}
+  image: {fileID: 21300000, guid: 0a099b77dfb6f1f47acea8898ed2d205, type: 3}
