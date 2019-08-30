@@ -80,6 +80,7 @@ public class DataHandler : MonoBehaviour
             {
                 if (playerData.condition.Equals("HitAndRun"))
                 {
+                    _head = new PlayerData.HeadData();
                     _head.headPosition = Player.instance.hmdTransform.position;
                     _head.direction = Player.instance.hmdTransform.forward;
                     playerData.headDataList.Add(_head);
@@ -89,6 +90,7 @@ public class DataHandler : MonoBehaviour
 
             }
         }
+        UnityEngine.Debug.DrawLine(Player.instance.hmdTransform.position, Player.instance.hmdTransform.position + Player.instance.hmdTransform.forward, Color.blue);
     }
 
     public void startTimer()

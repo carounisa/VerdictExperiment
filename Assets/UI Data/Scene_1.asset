@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Scene_1
   m_EditorClassIdentifier: 
   header: Scene 1
-  image: {fileID: 21300000, guid: ed6a0e29bdcd3384d840fea0d62c0b59, type: 3}
+  image: {fileID: 21300000, guid: 04f846a2a72a23e4f914e86537f48d7e, type: 3}

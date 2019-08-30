@@ -1,0 +1,188 @@
+{
+    "pNumber": 2,
+    "condition": "HitAndRun",
+    "timeStampList": [],
+    "headDataList": [],
+    "evidenceList": [
+        {
+            "name": "Please use the key arrows to navigate.",
+            "startTime": "12:16:39:392",
+            "endTime": "12:16:39:770",
+            "elapsedTime": "00:00:377"
+        },
+        {
+            "name": "Scene 1",
+            "startTime": "12:16:39:771",
+            "endTime": "12:16:40:259",
+            "elapsedTime": "00:00:488"
+        },
+        {
+            "name": "Please use the key arrows to navigate.",
+            "startTime": "12:16:40:259",
+            "endTime": "12:16:40:594",
+            "elapsedTime": "00:00:334"
+        },
+        {
+            "name": "Scene 1",
+            "startTime": "12:16:40:594",
+            "endTime": "12:16:40:913",
+            "elapsedTime": "00:00:318"
+        },
+        {
+            "name": "Scene 2",
+            "startTime": "12:16:40:913",
+            "endTime": "12:16:41:177",
+            "elapsedTime": "00:00:264"
+        },
+        {
+            "name": "Scene 3",
+            "startTime": "12:16:41:177",
+            "endTime": "12:16:41:394",
+            "elapsedTime": "00:00:217"
+        },
+        {
+            "name": "Scene 4",
+            "startTime": "12:16:41:394",
+            "endTime": "12:16:41:577",
+            "elapsedTime": "00:00:182"
+        },
+        {
+            "name": "Scene 5",
+            "startTime": "12:16:41:577",
+            "endTime": "12:16:41:754",
+            "elapsedTime": "00:00:176"
+        },
+        {
+            "name": "Prosecution Exhibit 1: Shoe",
+            "startTime": "12:16:41:754",
+            "endTime": "12:16:41:931",
+            "elapsedTime": "00:00:177"
+        },
+        {
+            "name": "Prosecution Exhibit 1: Shoe",
+            "startTime": "12:16:41:931",
+            "endTime": "12:16:42:105",
+            "elapsedTime": "00:00:173"
+        },
+        {
+            "name": "Prosecution Exhibit 2: Baseball cap",
+            "startTime": "12:16:42:105",
+            "endTime": "12:16:42:290",
+            "elapsedTime": "00:00:184"
+        },
+        {
+            "name": "Prosecution Exhibit 2: Baseball cap",
+            "startTime": "12:16:42:290",
+            "endTime": "12:16:42:451",
+            "elapsedTime": "00:00:160"
+        },
+        {
+            "name": "Prosecution Exhibit 3: Sunglasses",
+            "startTime": "12:16:42:451",
+            "endTime": "12:16:42:619",
+            "elapsedTime": "00:00:168"
+        },
+        {
+            "name": "Prosecution Exhibit 3: Sunglasses",
+            "startTime": "12:16:42:619",
+            "endTime": "12:16:42:777",
+            "elapsedTime": "00:00:157"
+        },
+        {
+            "name": "Prosecution Exhibit 4: Smartphone",
+            "startTime": "12:16:42:777",
+            "endTime": "12:16:42:938",
+            "elapsedTime": "00:00:160"
+        },
+        {
+            "name": "Prosecution Exhibit 4: Smartphone",
+            "startTime": "12:16:42:938",
+            "endTime": "12:16:43:90",
+            "elapsedTime": "00:00:152"
+        },
+        {
+            "name": "Prosecution Exhibit 5: Bottles",
+            "startTime": "12:16:43:91",
+            "endTime": "12:16:43:243",
+            "elapsedTime": "00:00:152"
+        },
+        {
+            "name": "Prosecution Exhibit 5: Bottles",
+            "startTime": "12:16:43:243",
+            "endTime": "12:16:43:548",
+            "elapsedTime": "00:00:304"
+        },
+        {
+            "name": "Prosecution Exhibit 6: Paint",
+            "startTime": "12:16:43:548",
+            "endTime": "12:16:43:721",
+            "elapsedTime": "00:00:173"
+        },
+        {
+            "name": "Prosecution Exhibit 6: Paint",
+            "startTime": "12:16:43:721",
+            "endTime": "12:16:43:882",
+            "elapsedTime": "00:00:161"
+        },
+        {
+            "name": "Prosecution Exhibit 7: Damaged headlight",
+            "startTime": "12:16:43:882",
+            "endTime": "12:16:44:35",
+            "elapsedTime": "00:00:152"
+        },
+        {
+            "name": "Prosecution Exhibit 7: Damaged headlight",
+            "startTime": "12:16:44:35",
+            "endTime": "12:16:44:195",
+            "elapsedTime": "00:00:160"
+        },
+        {
+            "name": "Prosecution Exhibit 8: Ripped shirt",
+            "startTime": "12:16:44:195",
+            "endTime": "12:16:44:339",
+            "elapsedTime": "00:00:143"
+        },
+        {
+            "name": "Prosecution Exhibit 8: Ripped shirt",
+            "startTime": "12:16:44:339",
+            "endTime": "12:16:44:483",
+            "elapsedTime": "00:00:144"
+        },
+        {
+            "name": "Eye Witness",
+            "startTime": "12:16:44:483",
+            "endTime": "12:16:44:642",
+            "elapsedTime": "00:00:158"
+        },
+        {
+            "name": "Eye Witness",
+            "startTime": "12:16:44:642",
+            "endTime": "12:16:44:818",
+            "elapsedTime": "00:00:176"
+        },
+        {
+            "name": "Eye Witness",
+            "startTime": "12:16:44:818",
+            "endTime": "12:16:44:970",
+            "elapsedTime": "00:00:152"
+        },
+        {
+            "name": "Eye Witness",
+            "startTime": "12:16:44:970",
+            "endTime": "12:16:45:185",
+            "elapsedTime": "00:00:214"
+        },
+        {
+            "name": "Eye Witness",
+            "startTime": "12:16:45:185",
+            "endTime": "12:16:45:387",
+            "elapsedTime": "00:00:201"
+        },
+        {
+            "name": "Eye Witness",
+            "startTime": "12:16:45:387",
+            "endTime": "12:16:45:561",
+            "elapsedTime": "00:00:173"
+        }
+    ]
+}
