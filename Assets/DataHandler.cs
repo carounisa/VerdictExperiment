@@ -90,7 +90,6 @@ public class DataHandler : MonoBehaviour
 
             }
         }
-        UnityEngine.Debug.DrawLine(Player.instance.hmdTransform.position, Player.instance.hmdTransform.position + Player.instance.hmdTransform.forward, Color.blue);
     }
 
     public void startTimer()

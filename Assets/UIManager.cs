@@ -32,14 +32,18 @@ public class UIManager : MonoBehaviour
     //Main panel
     GameObject _mainPanel;
     Image _mainSprite;
-    TextMeshProUGUI _mainText;
+    //TextMeshProUGUI _mainText;
+    Text _mainText;
 
     //Back Panel
     GameObject _backPanel;
     Image _backSprite;
-    TextMeshProUGUI _backText;
+    //TextMeshProUGUI _backText;
 
     // Start is called before the first frame update
+    /// <summary>
+    /// 
+    /// </summary>
     void Start()
     {
         stopWatch = new Stopwatch();
@@ -67,8 +71,11 @@ public class UIManager : MonoBehaviour
 
         //Initialize our main panel with data
         _mainPanel = Instantiate(_panel, transform);
+    //    _mainText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
+        _mainText = _mainPanel.GetComponentInChildren<Text>();
         _mainSprite = _mainPanel.GetComponentInChildren<Image>();
-        _mainText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
+
+
         //backSprite = _mainPanel.GetComponentInChildren<Image>();
         //_backText = _mainPanel.GetComponentInChildren<TextMeshProUGUI>();
 
