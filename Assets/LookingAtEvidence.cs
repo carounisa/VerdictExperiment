@@ -28,7 +28,6 @@ public class LookingAtEvidence : MonoBehaviour
         if( (transform != this.transform) && _stopwatch.IsRunning)
         {
             _stopwatch.Stop();
-            UnityEngine.Debug.Log("Looking: " + this.transform.tag + " " +_stopwatch.Elapsed);
             if(!(RayHitEvidence._evidenceTable.ContainsKey(this.transform.tag)))
             {
                 RayHitEvidence._evidenceTable.Add(this.transform.tag, _stopwatch.Elapsed.ToString());

@@ -795,7 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9426ae4860d7da4a842b646949c76c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointRadius: 3
+  pointRadius: 4
   renderCircles: 0
   screenSize: 1
   interpolation: 1
@@ -1480,8 +1480,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9999999, y: 1, z: 1}
-  m_Center: {x: -0.00000023841858, y: 0.000000059604645, z: -0.0000009536743}
+  m_Size: {x: 0.9999999, y: 0.51546675, z: 0.9999998}
+  m_Center: {x: -0.00000024235464, y: -0.24226679, z: -0.0000009650942}
 --- !u!1 &892373462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3237,7 +3237,7 @@ MonoBehaviour:
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   MarkUI: {fileID: 707331014}
-  heading: 'Prosecution Exhibit 6: Paint'
+  heading: 'Prosecution Exhibit 6: Black paint'
   image1: {fileID: 21300000, guid: c47334b94783d7a419faec434f783b3f, type: 3}
   image2: {fileID: 21300000, guid: 5cb83101f409fb748a9afd1d4de6f563, type: 3}
   useHandObjectAttachmentPoint: 1
@@ -3685,6 +3685,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1301761196895886791, guid: 75a3fd5030863eb409ba19882bede2db,
+        type: 3}
+      propertyPath: heightOfUI
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1301761196895886789, guid: 75a3fd5030863eb409ba19882bede2db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3828,17 +3833,22 @@ PrefabInstance:
     - target: {fileID: 1301761195674734778, guid: 75a3fd5030863eb409ba19882bede2db,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.5471698
+      value: 0.5754717
       objectReference: {fileID: 0}
     - target: {fileID: 1301761195674734778, guid: 75a3fd5030863eb409ba19882bede2db,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.5471698
+      value: 0.5754717
       objectReference: {fileID: 0}
     - target: {fileID: 1301761195674734778, guid: 75a3fd5030863eb409ba19882bede2db,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.5471698
+      value: 0.5754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301761195674734778, guid: 75a3fd5030863eb409ba19882bede2db,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6862745
       objectReference: {fileID: 0}
     - target: {fileID: 1301761196352981431, guid: 75a3fd5030863eb409ba19882bede2db,
         type: 3}

@@ -54,7 +54,7 @@ public class SetPlayerPrefs : MonoBehaviour
         }
 
         if (!PlayerPrefs.GetString("Condition").Equals("HitAndRunPhoto"))
-            XRSettings.enabled = false;
+            XRSettings.enabled = true;
 
         SceneManager.LoadScene(_dropdownSelection);
     }

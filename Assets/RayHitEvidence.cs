@@ -33,7 +33,7 @@ public class RayHitEvidence : MonoBehaviour
         UnityEngine.Debug.DrawRay(_playerPos, _playerForwardDirection, Color.blue);
 
         RaycastHit hit;
-        if (Physics.Raycast(_playerPos, _playerForwardDirection, out hit, 2f, LayerMask.GetMask("Evidence"))) {
+        if (Physics.Raycast(_playerPos, _playerForwardDirection, out hit, 3f, LayerMask.GetMask("Evidence"))) {
             _evidencePlayerIsLookingAt = hit.transform;
             OnRayHit(_evidencePlayerIsLookingAt);
         } else
