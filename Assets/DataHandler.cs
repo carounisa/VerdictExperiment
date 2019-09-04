@@ -13,6 +13,7 @@ public class DataHandler : MonoBehaviour
     [HideInInspector]
     public PlayerData.Evidence evidenceData;
 
+    private PlayerData.LookingBehaviour lookingData;
     private PlayerData.HeadData _head;
     private Stopwatch _stopwatch;
     private string _logFile;
@@ -54,6 +55,7 @@ public class DataHandler : MonoBehaviour
         playerData = new PlayerData();
         playerData.headDataList = new List<PlayerData.HeadData>();
         playerData.evidenceList = new List<PlayerData.Evidence>();
+        playerData.observationList = new List<PlayerData.LookingBehaviour>();
         playerData.timeStampList = new List<string>();
         playerData.pNumber = PlayerPrefs.GetInt("Participant Number");
         playerData.condition = PlayerPrefs.GetString("Condition");
@@ -66,6 +68,7 @@ public class DataHandler : MonoBehaviour
         _stopwatch = new Stopwatch();
         _head = new PlayerData.HeadData();
         evidenceData = new PlayerData.Evidence();
+        lookingData = new PlayerData.LookingBehaviour();
 
         UnityEngine.Debug.Log("Log files stored to: " + _logDir);
 
@@ -133,6 +136,14 @@ public class DataHandler : MonoBehaviour
 
     private void OnApplicationQuit()
     {
+        foreach (KeyValuePair<string, string> item in RayHitEvidence._evidenceTable)
+        {
+            lookingData = new PlayerData.LookingBehaviour();
+            lookingData.name = item.Key;
+            lookingData.time = item.Value;
+            playerData.observationList.Add(lookingData);
+        }
+
         if (_isRecording)
         {
             UnityEngine.Debug.Log("Exiting application and writing to file.");

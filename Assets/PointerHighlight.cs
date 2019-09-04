@@ -25,8 +25,8 @@ namespace Valve.VR.Extras
         [Tooltip("The range of motion to set on the skeleton. None for no change.")]
         public SkeletalMotionRangeChange setRangeOfMotionOnPickup = SkeletalMotionRangeChange.None;
 
-        public delegate void OnPointerInDelegate(SteamVR_LaserPointer pointer);
-        public delegate void OnPointerOutDelegate(SteamVR_LaserPointer pointer);
+      // public delegate void OnPointerInDelegate(SteamVR_LaserPointer pointer);
+      // public delegate void OnPointerOutDelegate(SteamVR_LaserPointer pointer);
 
         public MarkerUI MarkUI;
         public string heading;

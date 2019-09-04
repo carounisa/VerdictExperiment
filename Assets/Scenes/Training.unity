@@ -395,12 +395,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveCenterToTransformPosition: 1
-  pointBudget: 1000000
-  minNodeSize: 10
-  nodesLoadedPerFrame: 15
-  nodesGOsPerFrame: 30
+  pointBudget: 10000000
+  minNodeSize: 100
+  nodesLoadedPerFrame: 150
+  nodesGOsPerFrame: 300
   meshConfiguration: {fileID: 961383585}
-  cacheSizeInPoints: 1000000
+  cacheSizeInPoints: 10000000
   userCamera: {fileID: 116246720}
 --- !u!4 &473455218 stripped
 Transform:
@@ -688,10 +688,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9426ae4860d7da4a842b646949c76c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointRadius: 5
+  pointRadius: 4
   renderCircles: 0
   screenSize: 1
-  interpolation: 0
+  interpolation: 1
   reload: 0
 --- !u!1001 &1041378625
 PrefabInstance:
@@ -834,8 +834,8 @@ MonoBehaviour:
   setRangeOfMotionOnPickup: -1
   MarkUI: {fileID: 1879849989}
   heading: Example One
-  image1: {fileID: 21300000, guid: 16581f62ad667dd40b7ee9cbcdb94a48, type: 3}
-  image2: {fileID: 21300000, guid: bf8e408bc3557734cbc597e602dad187, type: 3}
+  image1: {fileID: 21300000, guid: 9d37f69cc65c39a4b852081767a3512b, type: 3}
+  image2: {fileID: 21300000, guid: e8b4320294bcf4e419d26e4e9c76ead7, type: 3}
   useHandObjectAttachmentPoint: 1
   attachEaseIn: 0
   snapAttachEaseInCurve:
@@ -1030,6 +1030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EvidenceUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1301761196895886791, guid: 75a3fd5030863eb409ba19882bede2db,
+        type: 3}
+      propertyPath: heightOfUI
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1301761196895886789, guid: 75a3fd5030863eb409ba19882bede2db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1158,11 +1163,6 @@ PrefabInstance:
     - target: {fileID: 1301761196895886786, guid: 75a3fd5030863eb409ba19882bede2db,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1301761196895886791, guid: 75a3fd5030863eb409ba19882bede2db,
-        type: 3}
-      propertyPath: heightOfUI
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1301761195674734779, guid: 75a3fd5030863eb409ba19882bede2db,
@@ -1704,8 +1704,10 @@ MonoBehaviour:
   playerData:
     pNumber: 0
     condition: 
+    timeStampList: []
     headDataList: []
     evidenceList: []
+    observationList: []
   evidenceData:
     name: 
     startTime: 
@@ -2062,8 +2064,8 @@ MonoBehaviour:
   setRangeOfMotionOnPickup: -1
   MarkUI: {fileID: 1879849989}
   heading: Example Two
-  image1: {fileID: 21300000, guid: 0fd8ef7bf9540b54ba13282430974839, type: 3}
-  image2: {fileID: 21300000, guid: 1294687d4c5683e4997e2f7ab7af7378, type: 3}
+  image1: {fileID: 21300000, guid: d7eda9c53bee8244a93db9fe770aa43f, type: 3}
+  image2: {fileID: 21300000, guid: 25ec64d92a6810e4a98e8f36d6abd6b1, type: 3}
   useHandObjectAttachmentPoint: 1
   attachEaseIn: 0
   snapAttachEaseInCurve:

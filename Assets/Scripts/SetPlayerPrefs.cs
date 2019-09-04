@@ -47,13 +47,15 @@ public class SetPlayerPrefs : MonoBehaviour
         Debug.Log(_pNumber + " " + _dropdownSelection);
         if (isRecording.isOn)
         {
-            Debug.Log("Recording to file: "  + "pNumber");
+            Debug.Log("Recording to file: " + "pNumber");
             PlayerPrefs.SetInt("Participant Number", _pNumber);
             PlayerPrefs.SetString("Condition", _dropdownSelection);
             PlayerPrefs.SetInt("Recording", 1);
         }
-        if (!PlayerPrefs.GetString("Condition").Equals("HitAndRun"))
-            XRSettings.enabled = true;
+
+        if (!PlayerPrefs.GetString("Condition").Equals("HitAndRunPhoto"))
+            XRSettings.enabled = false;
+
         SceneManager.LoadScene(_dropdownSelection);
     }
 }

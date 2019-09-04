@@ -10,6 +10,7 @@ public class PlayerData
     public List<string> timeStampList;
     public List<HeadData> headDataList;
     public List<Evidence> evidenceList;
+    public List<LookingBehaviour> observationList;
 
     [System.Serializable]
     public class HeadData
@@ -25,6 +26,13 @@ public class PlayerData
         public string startTime;
         public string endTime;
         public string elapsedTime;
+    }
+
+    [System.Serializable]
+    public class LookingBehaviour
+    {
+        public string name;
+        public string time;
     }
 
 
