@@ -136,12 +136,16 @@ public class DataHandler : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        foreach (KeyValuePair<string, string> item in RayHitEvidence._evidenceTable)
+
+        if (PlayerPrefs.GetString("Condition").Equals("HitAndRun"))
         {
-            lookingData = new PlayerData.LookingBehaviour();
-            lookingData.name = item.Key;
-            lookingData.time = item.Value;
-            playerData.observationList.Add(lookingData);
+            foreach (KeyValuePair<string, string> item in RayHitEvidence._evidenceTable)
+            {
+                lookingData = new PlayerData.LookingBehaviour();
+                lookingData.name = item.Key;
+                lookingData.time = item.Value;
+                playerData.observationList.Add(lookingData);
+            }
         }
 
         if (_isRecording)

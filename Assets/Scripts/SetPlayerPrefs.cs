@@ -45,16 +45,18 @@ public class SetPlayerPrefs : MonoBehaviour
     public void LoadSceneFromDropDown()
     {
         Debug.Log(_pNumber + " " + _dropdownSelection);
+        PlayerPrefs.SetString("Condition", _dropdownSelection);
         if (isRecording.isOn)
         {
             Debug.Log("Recording to file: " + "pNumber");
             PlayerPrefs.SetInt("Participant Number", _pNumber);
-            PlayerPrefs.SetString("Condition", _dropdownSelection);
             PlayerPrefs.SetInt("Recording", 1);
         }
 
-        if (!PlayerPrefs.GetString("Condition").Equals("HitAndRunPhoto"))
+        if (!(PlayerPrefs.GetString("Condition").Equals("HitAndRunPhoto")))
+        {
             XRSettings.enabled = true;
+        }
 
         SceneManager.LoadScene(_dropdownSelection);
     }

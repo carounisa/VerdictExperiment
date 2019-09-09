@@ -28,9 +28,12 @@ public class RayHitEvidence : MonoBehaviour
     void Update()
     {
         _playerPos = Player.instance.hmdTransform.position;
-        _playerForwardDirection = Player.instance.hmdTransform.TransformDirection(Vector3.forward);
+        _playerForwardDirection = Player.instance.hmdTransform.forward;
 
         UnityEngine.Debug.DrawRay(_playerPos, _playerForwardDirection, Color.blue);
+
+        UnityEngine.Debug.Log(Vector3.Dot(Player.instance.hmdTransform.forward, (this.transform.position - Player.instance.hmdTransform.transform.position).normalized) + " " + this.transform.tag);
+
 
         RaycastHit hit;
         if (Physics.Raycast(_playerPos, _playerForwardDirection, out hit, 3f, LayerMask.GetMask("Evidence"))) {

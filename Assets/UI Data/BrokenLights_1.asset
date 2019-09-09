@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb4cd95973b7e4c928da4eb70ae10a, type: 3}
   m_Name: BrokenLights_1
   m_EditorClassIdentifier: 
-  header: 'Prosecution Exhibit 7: Damaged headlight'
+  header: 'Prosecution Exhibit 7: Scratched headlight'
   image: {fileID: 21300000, guid: 80fc08fb6e650f2449e8217142fbfe85, type: 3}

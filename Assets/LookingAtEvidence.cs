@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class LookingAtEvidence : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class LookingAtEvidence : MonoBehaviour
         if (!_stopwatch.IsRunning && transform == this.transform)
         {
             _stopwatch.Start();
+            
         }
     }
 
@@ -34,7 +36,6 @@ public class LookingAtEvidence : MonoBehaviour
             }
 
             RayHitEvidence._evidenceTable[this.transform.tag] = _stopwatch.Elapsed.ToString();
-
         }
     }
 

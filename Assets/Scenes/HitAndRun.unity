@@ -191,7 +191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &66681336
 Transform:
   m_ObjectHideFlags: 0
@@ -313,7 +313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &161124893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -681,7 +681,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &374688999
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,37 +1089,37 @@ PrefabInstance:
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.83
+      value: 2.478
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.809
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.96
+      value: -9.86
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.031366304
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.20526476
+      value: -0.2028541
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.14955515
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9787065
+      value: 0.9672124
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
@@ -1139,7 +1139,7 @@ PrefabInstance:
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -17.579
       objectReference: {fileID: 0}
     - target: {fileID: 6437505354555136483, guid: 296a22c782bbc3e4e8e1fc0e60a16570,
         type: 3}
@@ -1397,7 +1397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &819670326
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1443,8 +1443,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819670325}
   m_LocalRotation: {x: -0, y: -0.27420813, z: -0, w: 0.9616704}
-  m_LocalPosition: {x: 0.585, y: 0.8, z: 2.366}
-  m_LocalScale: {x: 1.7215784, y: 0.3180919, z: 0.40144286}
+  m_LocalPosition: {x: 0.585, y: 0.732, z: 2.366}
+  m_LocalScale: {x: 1.7215784, y: 0.14181969, z: 0.40144286}
   m_Children: []
   m_Father: {fileID: 2081716065}
   m_RootOrder: 0
@@ -1896,7 +1896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1028979708
 Transform:
   m_ObjectHideFlags: 0
@@ -2055,7 +2055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1096523812
 Transform:
   m_ObjectHideFlags: 0
@@ -2452,7 +2452,7 @@ MonoBehaviour:
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   MarkUI: {fileID: 707331014}
-  heading: 'Prosecution Exhibit 7: Damaged headlight'
+  heading: 'Prosecution Exhibit 7: Scratched headlight'
   image1: {fileID: 21300000, guid: 80fc08fb6e650f2449e8217142fbfe85, type: 3}
   image2: {fileID: 21300000, guid: 180bc5437006e834e854e6dd940f7578, type: 3}
   useHandObjectAttachmentPoint: 1
@@ -2693,7 +2693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1692530216
 Transform:
   m_ObjectHideFlags: 0
@@ -3634,7 +3634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2081716065
 Transform:
   m_ObjectHideFlags: 0
@@ -3663,7 +3663,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081716064}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1d02fd691caaa94588ebc8bc2ca7b0a, type: 3}
   m_Name: 
