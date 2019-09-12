@@ -86,26 +86,18 @@ public class UIManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         _mainSprite.sprite = _uiArray[_currPanel].image;
         _mainText.text = _uiArray[_currPanel].header;
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) && (_currPanel != _uiArray.Length-1))
         {
             if (DataHandler.instance.isWatchRunning())
             {
                 DataHandler.instance.endRecordingEvidence();
             }
 
-            DataHandler.instance.startRecordingEvidence(_mainText.text);
-
-            if (_mainText.text.Equals("Eye Witness") && !(_hasPlayed))
-            {
-                _hasPlayed = true;
-                UnityEngine.Debug.Log("is playing");
-                GetComponent<AudioSource>().Play();
-            }
 
             // _backSprite.sprite = _uiArray[_currPanel].image;
             // _backText.text = _uiArray[_currPanel].header;
@@ -118,6 +110,18 @@ public class UIManager : MonoBehaviour
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = filledBreadcrumb;
+
+            _mainSprite.sprite = _uiArray[_currPanel].image;
+            _mainText.text = _uiArray[_currPanel].header;
+            DataHandler.instance.startRecordingEvidence(_mainText.text);
+            if (_mainText.text.Equals("Eye Witness") && !(_hasPlayed))
+            {
+                _hasPlayed = true;
+                UnityEngine.Debug.Log("is playing");
+                GetComponent<AudioSource>().Play();
+            }
+
+
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && _currPanel != 0)
         {
@@ -127,7 +131,6 @@ public class UIManager : MonoBehaviour
                 DataHandler.instance.endRecordingEvidence();
             }
 
-            DataHandler.instance.startRecordingEvidence(_mainText.text);
 
             // _backSprite.sprite = _uiArray[_currPanel].image;
             // _backText.text = _uiArray[_currPanel].header;
@@ -139,7 +142,9 @@ public class UIManager : MonoBehaviour
 
             currImg = (Image)_bread[_currPanel];
             currImg.sprite = filledBreadcrumb;
-
+            _mainSprite.sprite = _uiArray[_currPanel].image;
+            _mainText.text = _uiArray[_currPanel].header;
+            DataHandler.instance.startRecordingEvidence(_mainText.text);
         }
     }
 }

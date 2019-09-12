@@ -150,6 +150,11 @@ public class DataHandler : MonoBehaviour
 
         if (_isRecording)
         {
+            if (DataHandler.instance.isWatchRunning())
+            {
+                DataHandler.instance.endRecordingEvidence();
+            }
+
             UnityEngine.Debug.Log("Exiting application and writing to file.");
             WriteToFile();
         }

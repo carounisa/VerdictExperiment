@@ -51,7 +51,7 @@ public class SetPlayerPrefs : MonoBehaviour
             Debug.Log("Recording to file: " + "pNumber");
             PlayerPrefs.SetInt("Participant Number", _pNumber);
             PlayerPrefs.SetInt("Recording", 1);
-        }
+        }   
 
         if (!(PlayerPrefs.GetString("Condition").Equals("HitAndRunPhoto")))
         {

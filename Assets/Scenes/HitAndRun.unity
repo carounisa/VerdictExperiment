@@ -2452,7 +2452,7 @@ MonoBehaviour:
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
   MarkUI: {fileID: 707331014}
-  heading: 'Prosecution Exhibit 7: Scratched headlight'
+  heading: 'Prosecution Exhibit 7: Damaged headlight'
   image1: {fileID: 21300000, guid: 80fc08fb6e650f2449e8217142fbfe85, type: 3}
   image2: {fileID: 21300000, guid: 180bc5437006e834e854e6dd940f7578, type: 3}
   useHandObjectAttachmentPoint: 1
