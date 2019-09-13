@@ -32,7 +32,7 @@ public class RayHitEvidence : MonoBehaviour
 
         UnityEngine.Debug.DrawRay(_playerPos, _playerForwardDirection, Color.blue);
 
-        UnityEngine.Debug.Log(Vector3.Dot(Player.instance.hmdTransform.forward, (this.transform.position - Player.instance.hmdTransform.transform.position).normalized) + " " + this.transform.tag);
+       // UnityEngine.Debug.Log(Vector3.Dot(Player.instance.hmdTransform.forward, (this.transform.position - Player.instance.hmdTransform.transform.position).normalized) + " " + this.transform.tag);
 
 
         RaycastHit hit;
